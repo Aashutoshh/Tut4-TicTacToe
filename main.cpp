@@ -2,18 +2,15 @@
 
 #include <iostream>
 using namespace std;
+TicTacToe game;
 
 int main(){
 
-	game();
-	return 0;
-}
 
-
-void game(){
 	//game play 
-	TicTacToe game;
+	
 	game.reset();
+	game.print();
 	int count = 0 , row , col;
 	do{
 		if (count % 2 == 0){
@@ -39,5 +36,7 @@ void game(){
 	} while (game.over() == 1);
 
 	game.reset();
+
+	return 0;
 
 }
