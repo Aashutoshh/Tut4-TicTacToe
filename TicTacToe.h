@@ -10,6 +10,7 @@ public:
 
 	TicTacToe();
 	void reset();
+	int move(int row, int col, int player);
 	~TicTacToe();
 	
 };
